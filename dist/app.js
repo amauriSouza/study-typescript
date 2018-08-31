@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var modules_1 = require("./modules");
+var aluno_1 = require("./aluno");
+var _ = require("lodash");
+console.log(_.pad("Typescript Examples", 40, "="));
+var objPessoa = new modules_1.Pessoa('Amauri');
+objPessoa.mostraNome();
+var objAluno = new aluno_1.Aluno();
+objAluno.nome = 'Maurao';
+objAluno.ra = 1223;
+objAluno.nomeProfissao = "bb";
+console.log(objAluno.ra + '-' + objAluno.mostraNome() + "-" + objAluno.nomeProfissao);
